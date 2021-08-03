@@ -6,6 +6,6 @@ arquivo de origem, contendo apenas o nome e o valor total para
 aquele item (preço unitário multiplicado pela quantidade)
 
 ## Exemplos de saida
-![](https://github.com/DiegoLins10/OutFile/blob/master/out1.png)
+![](https://github.com/DiegoLins10/OutFile/blob/master/out1.png)<br>
 ![](https://github.com/DiegoLins10/OutFile/blob/master/out2.png)
 
