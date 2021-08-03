@@ -27,8 +27,8 @@ namespace OutFile
                 {
                     foreach (string line in lines)
                     {
-
-                        string[] fields = line.Split(','); //split para separar pelo ponto
+                        // virgula é usado para excel ingles e em portugues é usado ; como separador 
+                        string[] fields = line.Split(';'); //split para separar pelo ponto
                         string name = fields[0];
                         double price = double.Parse(fields[1], CultureInfo.InvariantCulture);
                         int quantity = int.Parse(fields[2]);
@@ -36,7 +36,7 @@ namespace OutFile
                         Product prod = new Product(name, price, quantity);
 
                         //escrevendo no novo arquivo uma linha
-                        sw.WriteLine(prod.Name + ", " + prod.Total().ToString("F2", CultureInfo.InvariantCulture));
+                        sw.WriteLine(prod.Name + ";" + prod.Total().ToString("F2", CultureInfo.InvariantCulture));
                     }
                 }
             }
